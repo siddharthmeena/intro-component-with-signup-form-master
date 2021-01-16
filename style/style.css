@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    text-align: center;
+    background-image: url(images/bg-intro-desktop.png);
+    background-position: center;
+    background-color: hsl(0, 100%, 74%) ;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    margin:10% 5% 0 5%;
+}
+.container{
+    margin: auto;
+}
+.child-container1{
+    text-align: left;
+    flex: 1;
+    padding-left:7%;
+    padding-right: 7%;
+    flex-basis: 30%;
+}
+.child-container2{
+    flex: 1;
+    padding-left: 7%;
+    padding-right: 7%;
+    flex-basis: 30%;
+    margin: 2%;
+}
+
+.offer {
+    padding: 2.5% 2%;
+    
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    /* border-bottom-color: hsl(246, 25%, 77%) ; */
+    border-bottom-width: 10px;
+    box-shadow:0 0.5rem rgba(114, 114, 116, 0.5);
+}
+.form-container{
+    align-items: center;
+    background-color: white;
+    margin-top:7%;
+    padding: 3% 2%;
+    border-radius: 10px;
+    box-shadow:0 0.5rem rgba(114, 114, 116, 0.5);
+    
+}
+.inputBox{
+    border: 1px solid hsl(249, 10%, 26%) ;   
+    border-radius: 5px;
+    padding: 3%;
+    width: 90%;
+    margin: 2%;
+    
+    
+}
+.extraClass{
+    background: url(images/icon-error.svg) no-repeat scroll 3px 3px;
+    background-position: right;
+}
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+.button{
+    border-radius: 10px;
+    border-width: 0px;
+    box-shadow:0 0.5rem hsla(154, 59%, 51%,0.8) ;
+    font-size: 16px;
+    padding: 3%;
+    margin: 2%;
+    width: 95%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-weight: 600;
+}
+.conditions{
+    font-size: 0.5rem;
+    color:  hsl(246, 25%, 77%);
+}
+.warning{
+    font-size: 0.5rem;
+    color: red;
+    text-align: end;
+    display: none;
+}
+@media only screen and (max-width: 700px){
+    .main-container{
+        display: block;
+    }
+    .child-container1{
+        text-align: center;
+        margin-bottom: 20%;
+    }
+
+}
+
